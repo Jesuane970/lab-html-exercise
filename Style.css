@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f8f6;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  padding: 6px;
+  margin-right: 20px;
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+  padding: 6px 12px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background-color: #fdfdfb;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-buttons button {
+  margin: 0 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.red-btn {
+  background-color: #e60023;
+  color: white;
+}
+
+.white-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.highlight {
+  background-color: #fffbe6;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.highlight h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  background: white;
+}
+
+.feature {
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #e60023;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: black;
+}
+
+.footer button {
+  background: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
