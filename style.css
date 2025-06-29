@@ -1,0 +1,477 @@
+
+:root {
+    --npm-red: #CB3837;
+    --dark-text: #222222;
+    --light-gray-text: #666666;
+    --lighter-gray-text: #999999;
+    --border-gray: #e0e0e0;
+    --background-gray: #f6f6f6;
+    --white: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent by default */
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+header > div:first-child { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font-size: 0.85em;
+    color: var(--light-gray-text);
+    border-bottom: 1px solid var(--border-gray);
+}
+
+header > div:first-child > div:first-child { 
+    display: flex;
+    align-items: center;
+}
+
+.blackHeart {
+    height: 14px; 
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+header > div:first-child nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header > div:first-child nav a {
+    color: var(--light-gray-text);
+    transition: color 0.2s ease;
+}
+
+header > div:first-child nav a:hover {
+    color: var(--npm-red);
+}
+
+header > div:last-child { 
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.npmLogo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+header > div:last-child form { 
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-gray);
+    border-radius: 5px;
+    padding: 8px 12px;
+    flex-grow: 1;
+    max-width: 450px;
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+header > div:last-child form label img { 
+    height: 16px;
+    margin-right: 10px;
+}
+
+header > div:last-child form input[type="search"] {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 1em;
+    color: var(--dark-text);
+}
+
+header > div:last-child form input[type="search"]::placeholder {
+    color: var(--lighter-gray-text);
+}
+
+header > div:last-child form button[type="submit"] {
+    background-color: var(--npm-red);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+header > div:last-child form button[type="submit"]:hover {
+    background-color: #a72d2d; 
+}
+
+
+header > div:last-child > div:last-child { 
+    display: flex;
+    margin-left: auto; 
+    gap: 15px;
+}
+
+.joinButton, .loginButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.joinButton {
+    background-color: transparent;
+    color: var(--dark-text);
+    border: 1px solid var(--border-gray);
+}
+
+.joinButton:hover {
+    background-color: var(--background-gray);
+}
+
+.loginButton {
+    background-color: var(--npm-red);
+    color: var(--white);
+    border: 1px solid var(--npm-red);
+}
+
+.loginButton:hover {
+    background-color: #a72d2d;
+    border-color: #a72d2d;
+}
+
+/* --- Section supérieure (Hero) --- */
+#upperSection {
+    text-align: center;
+    padding: 100px 20px 80px;
+    background-color: var(--white);
+}
+
+#upperSection h1 {
+    font-size: 3.8em; 
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--dark-text);
+}
+
+#upperSection article p {
+    font-size: 1.25em;
+    color: var(--light-gray-text);
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+}
+
+#upperSection > div { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.seePlansButton, .joinForFreeButton {
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.seePlansButton {
+    background-color: var(--npm-red);
+    color: var(--white);
+    border: 1px solid var(--npm-red);
+}
+
+.seePlansButton:hover {
+    background-color: #a72d2d;
+    border-color: #a72d2d;
+}
+
+.joinForFreeButton {
+    background-color: var(--white);
+    color: var(--npm-red);
+    border: 1px solid var(--npm-red);
+}
+
+.joinForFreeButton:hover {
+    background-color: var(--npm-red);
+    color: var(--white);
+}
+
+
+#middleSection {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--background-gray);
+}
+
+#middleSection img {
+    width: 120px; 
+    height: auto;
+    margin-bottom: 60px; 
+}
+
+#middleSection h2 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--dark-text);
+    position: relative;
+    display: inline-block; 
+}
+
+#middleSection h2::after { 
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px; 
+    height: 3px;
+    background-color: var(--npm-red);
+    border-radius: 2px;
+}
+
+#middleSection article p {
+    font-size: 1.15em;
+    color: var(--light-gray-text);
+    max-width: 800px;
+    margin: 30px auto 0;
+    line-height: 1.5;
+}
+
+
+#lowerSection {
+    padding: 60px 40px 100px; 
+    background-color: var(--white);
+    text-align: center; 
+}
+
+#lowerSection > div:first-child { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    margin-bottom: 80px; 
+}
+
+#lowerSection > div:first-child > div { 
+    flex-basis: 22%; 
+    min-width: 250px; 
+    text-align: left; 
+    padding: 20px;
+}
+
+#lowerSection > div img { 
+    height: 40px; 
+    margin-bottom: 15px;
+}
+
+#lowerSection > div h3 {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--dark-text);
+}
+
+#lowerSection > div p {
+    font-size: 1em;
+    color: var(--light-gray-text);
+    line-height: 1.5;
+}
+
+#lowerSection > a button { 
+    background-color: var(--dark-text);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: 1px solid var(--dark-text);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#lowerSection > a button:hover {
+    background-color: #4a4a4a;
+    border-color: #4a4a4a;
+}
+
+
+@media (max-width: 1024px) {
+    header > div:first-child,
+    header > div:last-child {
+        padding: 15px 25px;
+    }
+
+    header > div:first-child nav ul {
+        gap: 15px;
+    }
+
+    header > div:last-child {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header > div:last-child form {
+        order: 3; 
+        margin-top: 15px;
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header > div:last-child > div:last-child {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #upperSection h1 {
+        font-size: 3em;
+    }
+    #upperSection article p {
+        font-size: 1.1em;
+    }
+
+    #middleSection h2 {
+        font-size: 2em;
+    }
+    #middleSection article p {
+        font-size: 1em;
+    }
+
+    #lowerSection > div:first-child {
+        flex-direction: column;
+        align-items: center;
+    }
+    #lowerSection > div:first-child > div {
+        flex-basis: 80%;
+        max-width: 500px;
+        text-align: center; 
+    }
+    #lowerSection > div img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    header > div:first-child {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    header > div:first-child nav {
+        margin-top: 10px;
+        width: 100%;
+    }
+    header > div:first-child nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    header > div:last-child {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .npmLogo {
+        margin-bottom: 15px;
+    }
+    header > div:last-child form {
+        margin-top: 0;
+    }
+    header > div:last-child > div:last-child {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .joinButton, .loginButton {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #upperSection {
+        padding: 60px 20px 40px;
+    }
+    #upperSection h1 {
+        font-size: 2.5em;
+    }
+    #upperSection article p {
+        font-size: 1em;
+    }
+    #upperSection > div {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .seePlansButton, .joinForFreeButton {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #middleSection {
+        padding: 60px 20px;
+    }
+    #middleSection img {
+        margin-bottom: 40px;
+    }
+    #middleSection h2 {
+        font-size: 1.8em;
+    }
+    #middleSection article p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header > div:first-child,
+    header > div:last-child {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .blackHeart {
+        height: 12px;
+    }
+
+    .npmLogo {
+        height: 25px;
+    }
+
+    #upperSection h1 {
+        font-size: 2em;
+    }
+
+    #lowerSection > a button {
+        width: 90%;
+    }
+}
